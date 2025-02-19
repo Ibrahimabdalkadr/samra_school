@@ -67,7 +67,7 @@ function loginTeacher() {
     const user = users.find(u => u.email === email && u.password === password);
 
     if (user) {
-        window.location.href = '/pages/add_students.html'; // تحويل المستخدم إلى صفحة إضافة الطلاب
+        window.location.href = 'add_students.html'; // تحويل المستخدم إلى صفحة إضافة الطلاب
     } else {
         errorMessage.textContent = 'البريد الإلكتروني أو كلمة المرور غير صحيحة';
     }
